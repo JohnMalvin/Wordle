@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordle</title>
+    <link rel="icon" href="ASSETS/SVG/ICON-WEB.svg" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dark-film"></div>
+    <div class="disclaimer">
+        <div id="disclaimer">DISCLAIMER!!!</div><br>
+        <div id="paragraph">
+            This website is a replica of the website <a href="https://www.nytimes.com/games/wordle/index.html" target="_blank" style="color: blue; text-decoration: none">Wordle</a> and is intended solely as a coding project.
+            <br><br>
+            Project created by:<br>
+            John Malvin [21/09/2024]<br><br>
+            Built with:<br>
+            Html, Css, Javascript(Jquery), <a target="_blank" style="color: blue; text-decoration: none" href="https://api.dictionaryapi.dev/api/v2/entries/en/">API</a>
+        </div>
+        <div class="button_continue">
+            <button id="continue">CONTINUE</button>
+        </div>
+    </div>
+    <div class="display">
+        <div class="top" id="written">YOU WIN!!!</div>
+        <div class="bottom">
+            <p>The text was:</p>
+            <div class="text" id="the_word">APPLE</div>
+        </div>
+        <button id="play_again">PLAY AGAIN</button>
+    </div>
+    <div class="header">
+        <img id="wordle" src="ASSETS/SVG/LOGO.svg">
+        <img id="restart" src="ASSETS/SVG/RESET.svg">
+    </div>
+    <div class="container">
+        <div class="box-container">
+            <div class="line" id="line1">
+                <div class="box box1" id="box11"></div>
+                <div class="box box1" id="box12"></div>
+                <div class="box box1" id="box13"></div>
+                <div class="box box1" id="box14"></div>
+                <div class="box box1" id="box15"></div>
+            </div>
+            <div class="line" id="line2">
+                <div class="box box2" id="box21"></div>
+                <div class="box box2" id="box22"></div>
+                <div class="box box2" id="box23"></div>
+                <div class="box box2" id="box24"></div>
+                <div class="box box2" id="box25"></div>
+            </div>
+            <div class="line" id="line3">
+                <div class="box box3" id="box31"></div>
+                <div class="box box3" id="box32"></div>
+                <div class="box box3" id="box33"></div>
+                <div class="box box3" id="box34"></div>
+                <div class="box box3" id="box35"></div>
+            </div>
+            <div class="line" id="line4">
+                <div class="box box4" id="box41"></div>
+                <div class="box box4" id="box42"></div>
+                <div class="box box4" id="box43"></div>
+                <div class="box box4" id="box44"></div>
+                <div class="box box4" id="box45"></div>
+            </div>
+            <div class="line" id="line5">
+                <div class="box box5" id="box51"></div>
+                <div class="box box5" id="box52"></div>
+                <div class="box box5" id="box53"></div>
+                <div class="box box5" id="box54"></div>
+                <div class="box box5" id="box55"></div>
+            </div>
+            <div class="line" id="line6">
+                <div class="box box6" id="box61"></div>
+                <div class="box box6" id="box62"></div>
+                <div class="box box6" id="box63"></div>
+                <div class="box box6" id="box64"></div>
+                <div class="box box6" id="box65"></div>
+            </div>
+        </div>
+    </div>
+    <div class="keyboard">
+        <div class="key-line">
+            <div class="key" id="q">Q</div>
+            <div class="key" id="w">W</div>
+            <div class="key" id="e">E</div>
+            <div class="key" id="r">R</div>
+            <div class="key" id="t">T</div>
+            <div class="key" id="y">Y</div>
+            <div class="key" id="u">U</div>
+            <div class="key" id="i">I</div>
+            <div class="key" id="o">O</div>
+            <div class="key" id="p">P</div>
+        </div>
+        <div class="key-line" id="key-line2">
+            <div class="key" id="a">A</div>
+            <div class="key" id="s">S</div>
+            <div class="key" id="d">D</div>
+            <div class="key" id="f">F</div>
+            <div class="key" id="g">G</div>
+            <div class="key" id="h">H</div>
+            <div class="key" id="j">J</div>
+            <div class="key" id="k">K</div>
+            <div class="key" id="l">L</div>
+        </div>
+        <div class="key-line">
+            <div class="special" id="backspace">⌦</div>
+            <div class="key" id="z">Z</div>
+            <div class="key" id="x">X</div>
+            <div class="key" id="c">C</div>
+            <div class="key" id="v">V</div>
+            <div class="key" id="b">B</div>
+            <div class="key" id="n">N</div>
+            <div class="key" id="m">M</div>
+            <div class="special" id="enter">↵</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="//code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        window.jQuery || document.write('<script src="js/jquery-3.7.1.min.js"><\/script>');
+    </script>
+    <script src="jquery-3.7.1.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
